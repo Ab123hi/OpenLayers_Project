@@ -1,0 +1,59 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NIT's Information</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./lib/v7.3.0-package/ol.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ol@v7.3.0/ol.css"> -->
+
+</head>
+<body>
+    
+    <div class="heading">
+        <h1><strong> NATIONAL INSTITUTE OF TECHNOLOGY </strong></h1>
+    </div>
+    <div class="grid-container">
+        <div class="grid-1">
+            <div class="sidebar">
+                <h2>Base Layers</h2>
+                <input type="radio" name="baseLayerRadioButton" value="OSMStandard" checked> OSM Standard<br>
+                <input type="radio" name="baseLayerRadioButton" value="OSMSHumanitarian"> OSM Humanitarian<br>
+                <input type="radio" name="baseLayerRadioButton" value="BingMap"> Bing Map<br>
+                <input type="radio" name="baseLayerRadioButton" value="StamenTerrain">Stamen Terrain<br>
+                <input type="radio" name="baseLayerRadioButton" value="CartoDB">CartoDB Layer<br>
+
+                <h2> Layers</h2>
+                <input type="checkbox" name="otherLayersCheckbox" value="vectorGJLayer">GeoJSON Layer<br>    
+            </div>
+        </div>
+        <div class="grid-2">
+            <div id="js-map" class="map"></div>
+        </div>
+    </div>
+    <div class="overlay-container">
+        <h3 class="title-class">Institute: </h3>
+        <span class="overlay-text" id="feature-name"></span><br>
+        <h3 class="title-class">NIRF Ranking: </h3>
+        <span class="overlay-text" id="feature-info1"></span><br>
+        <h3 class="title-class">Departments: </h3>
+        <span class="overlay-text" id="feature-info2"></span><br>
+        <h3 class="title-class">Academic Programmes: </h3>
+        <span class="overlay-text" id="feature-info3"></span><br>
+        <h3 class="title-class">Website: </h3>
+        <span class="overlay-text" id="feature-info4"></span><br>
+    </div>
+
+    <script src="./lib/v7.3.0-package/dist/ol.js"></script>
+    <script src="./main.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/ol@v7.3.0/dist/ol.js"></script> -->
+</body>
+</html>
+    
+
+    
+                
+                
+
+    
